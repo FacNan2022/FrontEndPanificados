@@ -10,11 +10,15 @@ import { PanificadosServiceService } from 'src/app/service/panificados-service.s
 export class InicioComponent implements OnInit {
 
   constructor(public panificadoService: PanificadosServiceService) { }
-  persona: Persona = new Persona("","","");
+  persona: Persona = new Persona("","","","","","","","","");
 
   ngOnInit(): void {
     this.panificadoService.lista().subscribe(data => {
-      this.persona = data
+      this.persona=data[0]
+      console.log(data[0].apellido)
+    },
+    (error: any) => {
+      console.error(error);
     });
   }
 
