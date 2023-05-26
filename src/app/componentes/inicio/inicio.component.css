@@ -1,0 +1,23 @@
+.inicio{
+    background: url("https://imagenes.heraldo.es/files/image_654_v3/uploads/imagenes/2019/09/02/pan.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+
+.capa{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa h1{
+    color: darkgoldenrod;
+    font-size: 60px;
+}
