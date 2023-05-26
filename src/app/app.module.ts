@@ -1,5 +1,7 @@
-import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +14,8 @@ import { FotterComponent } from './componentes/fotter/fotter.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { HomeComponent } from './componentes/home/home.component';
-import { HttpClientModule } from '@angular/common/http';
+
+
 
 
 @NgModule({
