@@ -12,8 +12,8 @@ export class PanificadosServiceService {
   url = "http://localhost:8080/"
   constructor(private http:HttpClient) { }
 
-  public lista():Observable<Persona>{
-    return this.http.get<Persona>(this.url + "Panificados/informacion");
+  public lista():Observable<Persona[]>{
+    return this.http.get<Persona[]>(this.url + "Panificados/informacion");
 
   }
 
